@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Playlist Export (Exportify Clone)</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #121212; color: #fff; text-align: center; padding: 50px; }
+        .btn { background: #1db954; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 30px; cursor: pointer; font-weight: bold; }
+        .btn:hover { background: #1ed760; }
+        #app-section { display: none; margin-top: 30px; }
+        .playlist-card { background: #282828; margin: 10px auto; padding: 15px; width: 400px; display: flex; justify-content: space-between; align-items: center; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <div id="login-section">
+        <h1>Экспорт плейлистов Spotify в CSV</h1>
+        <p>Войдите под своим аккаунтом Spotify, чтобы выгрузить плейлисты</p>
+        <button class="btn" id="login-btn">Войти через Spotify</button>
+    </div>
+
+    <div id="app-section">
+        <h1>Ваши плейлисты</h1>
+        <button class="btn" id="refresh-btn" style="margin-bottom: 20px;">Обновить список</button>
+        <div id="playlists-container"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
